@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/article.css">
+    <link rel="stylesheet" type="text/css" href="../css/global.css">
+    <link rel="stylesheet" type="text/css" href="../css/md.css">
+    <script type="text/javascript" src="../js/article.js"></script>
+    <script type="text/javascript" src="../js/library.js"></script>
+    <title>2021电赛备赛（一）：2015国赛H题风力摆</title>
+</head>
+<body>
+    <div id="big">
+        <div id="leftDiv">
+            <div id="info">
+                <div id="head-img"><img src="../pic/头像.jpeg"></div>
+                <div id="acountInfo">
+                    <div class="text" id="acountName">SPFA</div>
+                    <div class="text" id="acountMsge">戏幕起，戏幕落，谁是客</div>
+                    <div class="text" id="back">back</div>
+                </div>
+            </div>
+            <div id="indx">
+                <div class="article" id="article1">
+                    <div class="content text md-content" style="padding: 10px;">
+                        <h4 style="margin-top: 0;">2021电赛备赛（一）：2015国赛H题风力摆</h3>
+                    </div>
+                </div>
+                <div class="article" id="article2">
+                    <div class="content text">第二篇文章</div>
+                </div>
+                <div class="article" id="article3">
+                    <div class="content text">第三篇文章</div>
+                </div>
+                <div class="article" id="article4">
+                    <div class="content text">第四篇文章</div>
+                </div>
+                <div class="article" id="article5">
+                    <div class="content text">第五篇文章</div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="md-content" id="cont">
+<h1>2021电赛备赛（一）：2015国赛H题风力摆</h1>
+<p>大一下学期跟着学长做电赛，又正逢校庆，带队老师需要作品在校庆展示，队长（学院里的竞赛大佬）就选择了风力摆来让我练手（练习PID等）.</p>
+<p>大一上学期接触了51单片机，寒假开始学习32，开学后参加蓝桥杯嵌入式组，混了个省奖，赛后感觉对32比较熟悉了，但对搭电路，机械结构还很陌生，但在完成了风力摆后对控制题的思路就比较熟悉了.</p>
+<p>在制作过程中遇到了一些问题,在这里分享一些我们踩过的坑（不涉及具体知识点）</p>
+<p>整个制作过程参考队长当年的方案：</p>
+<p><a href="https://blog.csdn.net/weixin_44578655/article/details/99649173?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522163015654416780261912208%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=163015654416780261912208&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-1-99649173.first_rank_v2_pc_rank_v29&amp;utm_term=doee&amp;spm=1018.2226.3001.4187">队长当年写的</a></p>
+<hr />
+<h2>一.重量：</h2>
+<p>整个系统对重量比较敏感（毕竟风力不大），制作过程中更换过一次电机（比原来的重），而且供电也从开关电源换成了锂电池，质量大了不少，摆的反应明显变慢了，所以质量越小越好.</p>
+<hr />
+<h2>二.桨叶：</h2>
+<p>制作过程中发现桨叶的推力和拉力差距很大（不同桨叶可能不同），我们的桨叶正转产生的推力要远小于反转的拉力（笑死，正转根本推不动），因此电机的转向要特别注意，如下图，如果此时需要摆体向右运动，我们需要控制右侧的电机拉，而不是左侧的电机推.</p>
+<hr />
+<h2>三.电机方向：</h2>
+<p>千万不要四个电机一起调！！！</p>
+<p>我弄来弄去在这耗了一晚上（各种叠加根本弄不明白），最后听了队长的一个一个调，结果很快就调出来了.</p>
+<p>大体就是只给一个方向上的PID参数（只有这个方向上的电机响应），调好方向之后再只看另一个方向，就简单多了.</p>
+<p>练习往年赛题的确是备赛的好方法，而风力摆又是控制题中非常经典的一个，难度不是很大，资料又比较多.</p>
+<p>附上图片：</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

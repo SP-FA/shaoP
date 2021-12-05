@@ -1,0 +1,39 @@
+#big {
+    display: flex;
+    justify-content: left;
+}
+
+#leftDiv {
+    width: 450px;
+}
+
+#acountInfo {
+    height: 140px;
+    width: 200px;
+    margin: 0 20px 0 20px;
+    border-left: solid 1px #777;
+}
+
+#acountName {
+    font-size: 3rem;
+    padding: 0 0 0 15px;
+}
+
+#acountMsge {
+    font-size: 1rem;
+    padding: 0 0 0 15px;
+}
+
+.article {
+    height: 100px;
+}
+
+#cont {
+    background-color: #CCC;
+    border-radius: 15px;
+    position: relative;
+    padding: 15px;
+    margin: 30px 15px 15px 0;
+    opacity: 0;
+    left: 200px;
+}

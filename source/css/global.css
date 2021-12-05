@@ -1,0 +1,84 @@
+* {
+    font-size: 16px;
+}
+
+body {
+    background-color: #333;
+}
+
+.text {
+    color: #777;
+    text-decoration: none;
+    font-family: "Comic Sans MS";
+}
+
+#info {
+    background-color: #CCC;
+    border-radius: 15px;
+    height: 140px;
+    position: relative;
+    padding: 15px;
+    margin: 30px 15px 15px 15px;
+    display: flex;
+    opacity: 0;
+    left: 100px;
+}
+
+#head-img {
+    height: 140px;
+    width: 140px;
+    border: solid 1px #777;
+    border-radius: 25px;
+}
+
+#head-img img {
+    height: 140px;
+    border-radius: 25px;
+    opacity: 1;
+}
+
+#acountInfoRight {
+    height: 140px;
+    width: 300px;
+    margin: 0 20px 0 20px;
+    border-left: solid 1px #777;
+}
+
+#acountAboutMe {
+    text-align: left;
+    font-size: 3rem;
+}
+
+#acountAboutMeDiv {
+    padding: 15px 0 0 15px;
+}
+
+#back {
+    font-size: 2rem;
+    padding: 10px 0 0 15px;
+}
+
+#indx {
+    background-color: #CCC;
+    border-radius: 15px;
+    height: auto;
+    position: relative;
+    padding: 15px;
+    margin: 15px;
+    opacity: 0;
+    left: 100px;
+}
+
+.article {
+    position: relative;
+    border-radius: 10px;
+    background-color: #fff;
+    border: solid 1px #777;
+    opacity: 0.6;
+    margin: 0 0 15px 0;
+}
+
+.article .content {
+    margin: 10px;
+    background-color: #fff;
+}

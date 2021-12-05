@@ -1,0 +1,26 @@
+#info {
+    justify-content: center;
+}
+
+#acountInfoLeft {
+    height: 140px;
+    width: 300px;
+    margin: 0 20px 0 20px;
+    border-right: solid 1px #777;
+}
+
+#acountName {
+    font-size: 3rem;
+    padding: 15px 15px 0 0;
+    text-align: right;
+}
+
+#acountMsge {
+    font-size: 1rem;
+    padding: 10px 15px 0 0;
+    text-align: right;
+}
+
+.article {
+    height: 250px;
+}
